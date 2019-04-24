@@ -131,9 +131,10 @@ GameObject:
   - component: {fileID: 29610360}
   - component: {fileID: 29610362}
   - component: {fileID: 29610361}
-  m_Layer: 0
+  - component: {fileID: 29610363}
+  m_Layer: 8
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29610359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.095, y: 0, z: 0}
+  m_LocalPosition: {x: 1.1, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1360493921}
@@ -164,6 +165,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5e39af560da17f4688d6465f161eb85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ToCall:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 29610363}
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!61 &29610362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -177,7 +194,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.12}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -190,6 +207,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.31}
   m_EdgeRadius: 0
+--- !u!114 &29610363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29610359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a471ed42973af4d9f04fdeafd26689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene: House_0
 --- !u!4 &113466340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2134962750651028198, guid: 58ea38c007fad884b92f4dd991c55ffe,
@@ -291,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1128260327}
   - component: {fileID: 1128260326}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TestTown_House_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +481,7 @@ GameObject:
   - component: {fileID: 1360493921}
   - component: {fileID: 1360493920}
   - component: {fileID: 1360493922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Building_House_0
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
