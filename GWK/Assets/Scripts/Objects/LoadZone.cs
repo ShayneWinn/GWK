@@ -7,8 +7,9 @@ public class LoadZone : MonoBehaviour
 {
 
     public string Scene;
+    public LayerMask Player;
 
-    public void LoadScene()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         SceneManager.LoadScene(Scene);
     }

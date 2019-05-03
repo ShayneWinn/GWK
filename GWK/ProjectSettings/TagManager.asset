@@ -16,8 +16,8 @@ TagManager:
   - 
   - Interactable
   - Collision
-  - 
-  - 
+  - Player
+  - LoadingZone
   - 
   - 
   - 
