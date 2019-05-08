@@ -25,7 +25,7 @@ public class CharacterController : MonoBehaviour
     {
         m_PreviousPosition = m_Rigidbody2D.position;
         m_CurrentPosition = m_PreviousPosition + m_NextMovement;
-        //Debug.Log(m_NextMovement);
+        //Debug.Log(m_NextMovement * 1000);
 
         m_Rigidbody2D.MovePosition(m_CurrentPosition);
         m_NextMovement = Vector2.zero;
